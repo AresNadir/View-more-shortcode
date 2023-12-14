@@ -10,6 +10,7 @@
 
 [class^="viewMoreBtnAbout"] {
   color:#000;
+  cursor: pointer;
 }
 
 [class^="hiddenMessage"] {
