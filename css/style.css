@@ -1,0 +1,20 @@
+[class^="viewMoreBtnAbout"]:after{
+  content: "";
+  display: block;
+  position: relative;
+  top:-15px;
+  height:1px;
+  width:90px;
+  background-color:#000;
+}
+
+[class^="viewMoreBtnAbout"] {
+  color:#000;
+}
+
+[class^="hiddenMessage"] {
+  color: #000;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+}
