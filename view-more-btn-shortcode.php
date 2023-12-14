@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: View More Buttons
-Description: View More Buttons for Phelo website
+Description: View More Buttons for Phelo website project
 Version: 1.0
 Author: Ares Ioakimidis
 */
