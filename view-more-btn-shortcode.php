@@ -21,14 +21,14 @@ function view_more_shortcode($attr) {
   // Construct the body of the button
   $viewMoreContent = '
   <div class="hiddenMsgContainer">
-  <div>
-  <a class="viewMoreBtnAbout'.$random_id.'">View More</a>
-  </div>
-  <div class="hiddenMessage'.$random_id.'">
-    <p>
-      '.$sc_atts['content'].'
-    </p>
-  </div>
+    <div>
+      <a class="viewMoreBtnAbout'.$random_id.'">View More</a>
+    </div>
+    <div class="hiddenMessage'.$random_id.'">
+      <p>
+        '.$sc_atts['content'].'
+      </p>
+    </div>
   </div>
 
   
