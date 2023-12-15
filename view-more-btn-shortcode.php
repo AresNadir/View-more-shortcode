@@ -2,7 +2,7 @@
 /*
 Plugin Name: View More Buttons
 Description: View More Buttons for Phelo website project
-Version: 1.0
+Version: 1.1
 Author: Ares Ioakimidis
 */
 
@@ -20,34 +20,30 @@ function view_more_shortcode($attr) {
 
   // Construct the body of the button
   $viewMoreContent = '
-  <style>
-    .inv'.$random_id.' {
-      display: block !important;
-    }
-  </style>
-
-  <div class="hiddenMessage'.$random_id.'" style="display:none;">
+  <div class="hiddenMsgContainer">
+  <div>
+  <a class="viewMoreBtnAbout'.$random_id.'">View More</a>
+  </div>
+  <div class="hiddenMessage'.$random_id.'">
     <p>
       '.$sc_atts['content'].'
     </p>
   </div>
-
-  <div>
-    <a class="viewMoreBtnAbout'.$random_id.'">View More</a>
   </div>
-  <script>
-    const theMessage'.$random_id.' = document.querySelector(".hiddenMessage'.$random_id.'");
-    const theViewMoreLink'.$random_id.' = document.querySelector(".viewMoreBtnAbout'.$random_id.'");
 
-    theViewMoreLink'.$random_id.'.addEventListener("click", () => {
-      theMessage'.$random_id.'.classList.toggle("inv'.$random_id.'");
-      theViewMoreLink'.$random_id.'.style.display = "none";
-    })
+  
+  <script>
+      const theMessage'.$random_id.' = document.querySelector(".hiddenMessage'.$random_id.'");
+      const theViewMoreLink'.$random_id.' = document.querySelector(".viewMoreBtnAbout'.$random_id.'");
+      theViewMoreLink'.$random_id.'.addEventListener("click", () => {
+        theMessage'.$random_id.'.style.opacity = 1;
+        theViewMoreLink'.$random_id.'.style.display = "none";
+      })
   </script>
   ';
   
   return $viewMoreContent;
 }
 
-add_shortcode('view-more-shortcode', 'view_more_shortcode');
+add_shortcode('view-more-shortcode-phelo', 'view_more_shortcode');
 ?>
